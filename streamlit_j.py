@@ -20,7 +20,9 @@ with col3:
 with col4:
     if st.button("Division (+)", use_container_width=True):
         if second_num != 0:
-            division = first_num / second_num        
+            division = first_num / second_num
+            st.success(f"Result:{division} ✅")
+        
         else:
             st.error("Error:Division by zero is not allowed")                             
 
